@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="InnoDB表的限制 对InnoDB表的限制在本节中的以下主题下进行描述：最大值和最小值  一个表最多可以包含1017列。虚拟生成的列包含在此限制中。    一个表最多可以包含64个辅助索引。    索引键前缀长度限制是使用DYNAMIC或COMPRESSED行格式的InnoDB表的3072字节。  索引键前缀长度限制是使用REDUNDANT或COMPACT行格式的InnoDB表的767字节。例如">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-21T06:48:38.299Z">
+<meta property="og:updated_time" content="2019-02-21T06:55:33.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="InnoDB表的限制">
 <meta name="twitter:description" content="InnoDB表的限制 对InnoDB表的限制在本节中的以下主题下进行描述：最大值和最小值  一个表最多可以包含1017列。虚拟生成的列包含在此限制中。    一个表最多可以包含64个辅助索引。    索引键前缀长度限制是使用DYNAMIC或COMPRESSED行格式的InnoDB表的3072字节。  索引键前缀长度限制是使用REDUNDANT或COMPACT行格式的InnoDB表的767字节。例如">
@@ -327,6 +327,7 @@
 <p> 一个表最多可以包含<strong>64</strong>个辅助索引。   </p>
 <p>索引键前缀长度限制是使用<strong>DYNAMIC</strong>或<strong>COMPRESSED</strong>行格式的<strong>InnoDB</strong>表的<strong>3072</strong>字节。 </p>
 <p>索引键前缀长度限制是使用<strong>REDUNDANT</strong>或<strong>COMPACT</strong>行格式的InnoDB表的<strong>767</strong>字节。例如，在TEXT或VARCHAR列上，如果假设<strong>utf8mb4</strong>字符集和每个字符最多<strong>4</strong>个字节，则列前缀索引可能超过<strong>191</strong>个字符，从而达到此限制。</p>
+<a id="more"></a>  
 <p> 尝试使用超过限制的索引键前缀长度将返回错误。 </p>
 <p>应用于索引键前缀的限制也适用于全列索引键。 </p>
 <p>如果通过在创建MySQL实例时指定<strong>innodb_page_size</strong>选项将InnoDB页面大小减少到8KB或4KB，则索引键的最大长度将根据<strong>16KB</strong>页面大小的<strong>3072</strong>字节的限制按比例降低。也就是说，当页面大小为<strong>8KB</strong>时，最大索引键长度是<strong>1536</strong>字节，当页面大小为<strong>4KB</strong>时，最大索引键长度是<strong>768</strong>字节。 </p>
