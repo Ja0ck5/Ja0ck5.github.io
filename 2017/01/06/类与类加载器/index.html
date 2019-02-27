@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java,JVM,">
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ja0ck5">
-<meta property="og:url" content="http://yoursite.com/tags/Java/index.html">
+<meta name="description" content="类与类加载器12    虚拟机设计团队把类加载阶段中的 &amp;quot;通过一个类的全限定名来获取描述此类的二进制字节流&amp;quot; 这个动作放到 Java 虚拟机外部去实现，以便让应用程序自己决定如何去获取需要的类。 实现这个动作的 代码模块 称为 &amp;quot;类加载器&amp;quot;。  类加载器 虽然只用于实现类的加载动作，但它在Java 程序中起到的作用却远远不限于类加载阶段。  对于任意一">
+<meta name="keywords" content="Java,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="类与类加载器">
+<meta property="og:url" content="http://yoursite.com/2017/01/06/类与类加载器/index.html">
 <meta property="og:site_name" content="Ja0ck5">
+<meta property="og:description" content="类与类加载器12    虚拟机设计团队把类加载阶段中的 &amp;quot;通过一个类的全限定名来获取描述此类的二进制字节流&amp;quot; 这个动作放到 Java 虚拟机外部去实现，以便让应用程序自己决定如何去获取需要的类。 实现这个动作的 代码模块 称为 &amp;quot;类加载器&amp;quot;。  类加载器 虽然只用于实现类的加载动作，但它在Java 程序中起到的作用却远远不限于类加载阶段。  对于任意一">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.loli.net/2019/02/27/5c765ead638ca.png">
+<meta property="og:updated_time" content="2019-02-27T09:56:30.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ja0ck5">
+<meta name="twitter:title" content="类与类加载器">
+<meta name="twitter:description" content="类与类加载器12    虚拟机设计团队把类加载阶段中的 &amp;quot;通过一个类的全限定名来获取描述此类的二进制字节流&amp;quot; 这个动作放到 Java 虚拟机外部去实现，以便让应用程序自己决定如何去获取需要的类。 实现这个动作的 代码模块 称为 &amp;quot;类加载器&amp;quot;。  类加载器 虽然只用于实现类的加载动作，但它在Java 程序中起到的作用却远远不限于类加载阶段。  对于任意一">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/27/5c765ead638ca.png">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Java/">
+  <link rel="canonical" href="http://yoursite.com/2017/01/06/类与类加载器/">
 
 
 
 
 
-  <title>Tag: Java | Ja0ck5</title>
+  <title>类与类加载器 | Ja0ck5</title>
   
 
 
@@ -140,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,208 +253,210 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Java<small>Tag</small>
-        </h2>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/06/类与类加载器/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ja0ck5">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ja0ck5">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/01/06/类与类加载器/" itemprop="url">
-              
-                <span itemprop="name">类与类加载器</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">类与类加载器</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-06T00:11:22+08:00" content="2017-01-06">
-          01-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T00:11:22+08:00">
+                2017-01-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JVM/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/05/二分法三种模型/" itemprop="url">
-              
-                <span itemprop="name">二分法三种模型</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-05T23:11:38+08:00" content="2017-01-05">
-          01-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
+        <excerpt in index | 首页摘要> 
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<h3 id="类与类加载器"><a href="#类与类加载器" class="headerlink" title="类与类加载器"></a>类与类加载器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">    虚拟机设计团队把类加载阶段中的 &quot;通过一个类的全限定名来获取描述此类的二进制字节流&quot; 这个动作放到 Java 虚拟机外部去实现，以便让应用程序自己决定如何</span><br><span class="line">去获取需要的类。 实现这个动作的 代码模块 称为 &quot;类加载器&quot;。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>类加载器</strong> 虽然只用于实现类的加载动作，但它在Java 程序中起到的作用却远远不限于类加载阶段。</p>
+</blockquote>
+<p>对于任意一个类，都需要 由 加载它的<strong>类加载器</strong> 和 <strong>这个类本身</strong>一同确立其在 Java 虚拟机中的<strong>唯一性</strong>，<strong>每一个类加载器，都拥有一个独立的类名称空间</strong>。 两个类来自同一个 Class 文件，被同一个虚拟机加载，只要加载它们的类加载器不同，则这两个类必定不相等。 </p>
+<a id="more"></a>
+<the rest of contents | 余下全文>
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/04/784. Letter Case Permutation/" itemprop="url">
-              
-                <span itemprop="name">784. Letter Case Permutation</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-04T19:02:37+08:00" content="2017-01-04">
-          01-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/30/300. Longest Increasing Subsequence/" itemprop="url">
-              
-                <span itemprop="name">300. Longest Increasing Subsequence</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-12-30T21:02:14+08:00" content="2016-12-30">
-          12-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/10/126. Word Ladder II/" itemprop="url">
-              
-                <span itemprop="name">126  Word Ladder II</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-12-10T20:10:08+08:00" content="2016-12-10">
-          12-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/08/127. Word Ladder/" itemprop="url">
-              
-                <span itemprop="name">127. Word Ladder</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-12-08T22:11:00+08:00" content="2016-12-08">
-          12-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/03/303. Range Sum Query - Immutable/" itemprop="url">
-              
-                <span itemprop="name">303. Range Sum Query - Immutable</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-12-03T14:19:56+08:00" content="2016-12-03">
-          12-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<h4 id="双亲委派模型"><a href="#双亲委派模型" class="headerlink" title="双亲委派模型"></a>双亲委派模型</h4><p>从 Java 虚拟机的角度来讲，只存在两种不同的类加载器:     </p>
+<pre><code>1. 启动类加载器(Bootstrap ClassLoader),  这个类加载器使用 C++ 实现的(这里只限于 HotSpot ，MRP/Maxine 等虚拟机本身都是由 Java 编写的) ， 是**虚拟机自身的一部分**。 
+2. 所有其他类加载器，都由 Java 语言实现，独立于 **虚拟机外部**，并且全都继承于抽象类 java.lang.ClassLoader 
+</code></pre><h4 id="类加载器的分类"><a href="#类加载器的分类" class="headerlink" title="类加载器的分类"></a>类加载器的分类</h4><p>类加载器可以分得更细致一些，大部分 Java 程序都使用到以下 3 种系统提供的类加载器。 </p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 启动类加载器(Bootstrap ClassLoader) </li>
+</ul>
+<ol>
+<li>负责将存放在 &lt;JAVA_HOME&gt;\lib 目录中的，或者被 -Xbootclasspath 参数所指定的路径中的，并且是 虚拟机识别的(仅按照文件名识别，如 rt.jar ，名字不符合的类库即使放在 lib 目录中也不会被加载)类库加载到虚拟机内存中。 </li>
+<li><strong>启动类加载器无法被 Java 程序直接引用</strong>，用户在编写自定义类加载器时，如果需要把加载请求委派给引导类加载器，那么直接使用 null 代替即可。 </li>
+</ol>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 扩展类加载器(Extension ClassLoader) </li>
+</ul>
+<ol>
+<li>这个加载器由 sun.misc.Launcher$ExtClassLoader 实现，它负责加载 &lt;JAVA_HOME&gt;\lib\ext 目录中的，或者被 java.ext.dirs 系统变量所指定的路径中的所有类库，开发者可以直接使用 </li>
+</ol>
+<ul>
+<li style="list-style: none"><input type="checkbox"> 应用程序类加载器(Application ClassLoader) </li>
+</ul>
+<ol>
+<li>这个类加载器由 sun.misc.Launcher$AppClassLoader 实现。由于这个类加载器是 ClassLoader 中的 getSystemClassLoader() 方法的返回值，所以一般也称它为<strong>系统类加载器</strong>。 </li>
+<li>它负责加载用户类路径(ClassPath) 上所指定的类库，开发者可以直接使用这个类加载器，如果应用程序中没有自定义过自己的类加载器，<strong>一般情况下这个就是程序中默认的类加载器</strong>。 </li>
+</ol>
+<p><img src="https://i.loli.net/2019/02/27/5c765ead638ca.png" alt></p>
+<p><strong>双亲委派模型并不是强制性的约束模型。</strong> </p>
+</the></excerpt>
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/05/二分法三种模型/" rel="next" title="二分法三种模型">
+                <i class="fa fa-chevron-left"></i> 二分法三种模型
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/02/InnoDB表的限制/" rel="prev" title="InnoDB表的限制">
+                InnoDB表的限制 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -455,6 +464,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -475,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -536,6 +558,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#类与类加载器"><span class="nav-number">1.</span> <span class="nav-text">类与类加载器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#双亲委派模型"><span class="nav-number">1.1.</span> <span class="nav-text">双亲委派模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类加载器的分类"><span class="nav-number">1.2.</span> <span class="nav-text">类加载器的分类</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -669,6 +707,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
