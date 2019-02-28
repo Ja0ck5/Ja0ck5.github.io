@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Java,JVM,">
 
 
 
@@ -79,13 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ja0ck5">
-<meta property="og:url" content="http://yoursite.com/archives/2017/01/index.html">
+<meta name="description" content="对象的内存布局对象在内存中存储的布局可以分为3块区域: 对象头(Header)、实例数据(Instance Data) 和对齐填充(Padding)  HotSpot 虚拟机的对象头包括两部分信息   用于存储对象自身的运行时数据 如 哈希码(HashCode)、GC 分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等。  这部分数据的长度在 32位和64位虚拟机(未开启压缩指针">
+<meta name="keywords" content="Java,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对象的内存布局">
+<meta property="og:url" content="http://yoursite.com/2017/01/12/对象的内存布局/index.html">
 <meta property="og:site_name" content="Ja0ck5">
+<meta property="og:description" content="对象的内存布局对象在内存中存储的布局可以分为3块区域: 对象头(Header)、实例数据(Instance Data) 和对齐填充(Padding)  HotSpot 虚拟机的对象头包括两部分信息   用于存储对象自身的运行时数据 如 哈希码(HashCode)、GC 分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等。  这部分数据的长度在 32位和64位虚拟机(未开启压缩指针">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.loli.net/2019/02/28/5c77a77966fe6.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/02/28/5c77a8bd11a9a.png">
+<meta property="og:image" content="https://i.loli.net/2019/02/28/5c77a931ea082.png">
+<meta property="og:updated_time" content="2019-02-28T09:26:33.138Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ja0ck5">
+<meta name="twitter:title" content="对象的内存布局">
+<meta name="twitter:description" content="对象的内存布局对象在内存中存储的布局可以分为3块区域: 对象头(Header)、实例数据(Instance Data) 和对齐填充(Padding)  HotSpot 虚拟机的对象头包括两部分信息   用于存储对象自身的运行时数据 如 哈希码(HashCode)、GC 分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等。  这部分数据的长度在 32位和64位虚拟机(未开启压缩指针">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/28/5c77a77966fe6.jpg">
 
 
 
@@ -115,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/01/">
+  <link rel="canonical" href="http://yoursite.com/2017/01/12/对象的内存布局/">
 
 
 
 
 
-  <title>Archive | Ja0ck5</title>
+  <title>对象的内存布局 | Ja0ck5</title>
   
 
 
@@ -140,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,247 +255,208 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/12/对象的内存布局/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ja0ck5">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ja0ck5">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h2 class="post-title" itemprop="name headline">对象的内存布局</h2>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-12T19:45:56+08:00">
+                2017-01-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 11 posts in total. Keep on posting.
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JVM/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h2 class="archive-year" id="archive-year-2017">2017</h2>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/12/对象的内存布局/" itemprop="url">
-              
-                <span itemprop="name">对象的内存布局</span>
-              
-            </a>
-        
-      </h3>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-12T19:45:56+08:00" content="2017-01-12">
-          01-12
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/10/HotSpot 虚拟机中的对象/" itemprop="url">
-              
-                <span itemprop="name">HotSpot 虚拟机中的对象</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-10T20:49:33+08:00" content="2017-01-10">
-          01-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/08/Java 内存区域/" itemprop="url">
-              
-                <span itemprop="name">Java 内存区域</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-08T23:29:12+08:00" content="2017-01-08">
-          01-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
+        <excerpt in index | 首页摘要> 
 
-        
-        
-        
+<h3 id="对象的内存布局"><a href="#对象的内存布局" class="headerlink" title="对象的内存布局"></a>对象的内存布局</h3><p>对象在内存中存储的布局可以分为<strong>3</strong>块区域: <strong>对象头(Header)</strong>、<strong>实例数据(Instance Data)</strong> 和<strong>对齐填充(Padding)</strong> </p>
+<p>HotSpot 虚拟机的<strong>对象头</strong>包括两部分信息 </p>
+<ol>
+<li><p>用于存储对象自身的运行时数据</p>
+<p>如 哈希码(HashCode)、GC 分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等。 </p>
+<p>这部分数据的长度在 32位和64位虚拟机(未开启压缩指针) 中分别为 32bit 和 64bit,官方称之为 “<strong>Mark Word</strong>“.  </p>
+<p>对象需要存储的运行时数据很多，其实已经超出了 32位、64位 Bitmap 结构所能记录的限度，但是<strong>对象头信息是与对象自身定义的</strong> <strong>数据无关的额外存储成本</strong>， 考虑到虚拟机空间效率， Mark Word 被设计成一个非固定的数据结构以便在极小的空间存储尽量多的信息，它会根据对象的状态复用自己的存储空间。 </p>
+<p>例如: 在 32 位的 HotSpot 虚拟机中，如果对象处于未被锁定的状态下，那么 Mark Word 的32bit 空间中的 <strong>25bit 用于存储对象哈希码，4 bit 用于 存储对象分代年龄，2bit 用于存储锁标志位，1bit固定为0，而在其他状态(轻量级锁，重量锁，GC标记，偏向锁)下的存储内容:</strong></p>
+<p><img src="https://i.loli.net/2019/02/28/5c77a77966fe6.jpg" alt> <a id="more"></a></p>
+</li>
+<li><p><strong>对象头的另一部分</strong>是<strong>类型指针</strong>。 即<strong>对象指向它的类元数据的指针</strong>，虚拟机通过这个指针来确定这个对象是哪个类的实例。并不是所有虚拟机实现都必须在对象数据上保留类型指针。</p>
+<p>换句话说，查找对象的元数据信息并不一定要经过对象本身。</p>
+<p>另外，如果对象是一个 Java 数组，在对象投中还必须有一块用于记录数组长度的数据，因为虚拟机可以通过普通 Java 对象的元数据信息确定 Java 对象的大小，但是从数组的元数据中却无法确定数组的大小。 </p>
+</li>
+</ol>
+<the rest of contents | 余下全文>
 
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/06/类与类加载器/" itemprop="url">
-              
-                <span itemprop="name">类与类加载器</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-06T00:11:22+08:00" content="2017-01-06">
-          01-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+<ol start="3">
+<li><p>对齐填充。并不是必然存在的，也没有特别的含义，仅仅是占位符的作用。</p>
+<p>由于 HotSpot VM 的自动内存管理系统要求对象起始地址必须是 8 字节的整数倍，即 对象的大小必须是 8 字节的整数倍。而对象头部分正好是 8 字节的倍数(1 or 2 倍)。因此，当对象实例数据部分没有对齐时，就需要通过对齐填充来补全。 </p>
+</li>
+</ol>
+<h4 id="对象的访问定位"><a href="#对象的访问定位" class="headerlink" title="对象的访问定位"></a>对象的访问定位</h4><p><strong>建立对象是为了使用对象，Java 程序需要通过栈上的 reference 数据来操作堆上的具体对象。</strong> </p>
+<p>由于 reference 类型在 Java 虚拟机规范中只规定了一个指向对象的引用，并没有定义这个引用应该通过河中方式去定位、访问堆中对象的具体位置，所以对象的访问方式也是取决于虚拟机的实现。 </p>
+<p>目前主流的访问方式使用 <strong>句柄</strong> 和 <strong>直接指针</strong> 两种。 </p>
+<h5 id="使用句柄访问"><a href="#使用句柄访问" class="headerlink" title="使用句柄访问:"></a>使用句柄访问:</h5><p> Java 堆中会划分出一块内存来作为<strong>句柄池</strong></p>
+<p>reference 中存储的就是对象的<strong>句柄地址</strong>,而句柄中包含了<strong>对象实例数据</strong> 与 <strong>类型数据各自的具体地址信息</strong>。 </p>
+<p><strong>优势</strong>: 使用句柄来访问的最大好处是 reference 中存储的是稳定的句柄地址，在对象被移动(垃圾收集时移动对象是非常普遍的行为)时，只会改变句柄中的实例数据指针，而 reference 本身不需要修改。 </p>
+<p><img src="https://i.loli.net/2019/02/28/5c77a8bd11a9a.png" alt></p>
+<h5 id="直接指针访问"><a href="#直接指针访问" class="headerlink" title="直接指针访问:"></a>直接指针访问:</h5><p>Java 堆对象的布局中就必须考虑如何放置访问类型数据的相关信息，而 reference 中存储的<strong>直接就是对象地址</strong>。 </p>
+<p><strong>优势</strong>: 最大的好处是<strong>速度更快</strong>，节省了一次指针定位的时间开销，由于对象的访问在 Java 中非常频繁，因此这类开销积少成多后也是一项非常可观的执行成本。HotSpot 是使用直接指针访问的形式。 </p>
+<p><img src="https://i.loli.net/2019/02/28/5c77a931ea082.png" alt></p>
+</the></excerpt>
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/05/二分法三种模型/" itemprop="url">
-              
-                <span itemprop="name">二分法三种模型</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-05T23:11:38+08:00" content="2017-01-05">
-          01-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/04/784. Letter Case Permutation/" itemprop="url">
-              
-                <span itemprop="name">784. Letter Case Permutation</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-04T19:02:37+08:00" content="2017-01-04">
-          01-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/10/HotSpot 虚拟机中的对象/" rel="next" title="HotSpot 虚拟机中的对象">
+                <i class="fa fa-chevron-left"></i> HotSpot 虚拟机中的对象
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/02/InnoDB表的限制/" rel="prev" title="InnoDB表的限制">
+                InnoDB表的限制 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -494,6 +464,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -514,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -575,6 +558,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的内存布局"><span class="nav-number">1.</span> <span class="nav-text">对象的内存布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的访问定位"><span class="nav-number">1.1.</span> <span class="nav-text">对象的访问定位</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用句柄访问"><span class="nav-number">1.1.1.</span> <span class="nav-text">使用句柄访问:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#直接指针访问"><span class="nav-number">1.1.2.</span> <span class="nav-text">直接指针访问:</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -708,6 +707,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
